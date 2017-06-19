@@ -1,0 +1,52 @@
+.navbar-brand {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 50px;
+}
+
+.navbar {
+	padding-bottom: 10px;
+}
+
+li {
+	padding-top: 10px;
+	font-size: 20px;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.jumbotron h1 {
+	font-family: 'Open Sans Condensed', cursive;
+	font-size: 80px !important;
+	color: lightgrey;
+}
+
+h5 {
+	font-family: 'Open Sans Condensed', cursive;
+	font-size: 26px !important;
+	color: lightgrey;
+}
+
+h1 small {
+	color: mediumpurple;
+}
+
+.jumbotron {
+	background-color: rgba(0,0,0,0.3);
+}
+
+body {
+	background: url(../images/background.png);
+	background-size: cover;
+}
+
+.panel, .panel-body {
+	background-color: rgba(0,0,0,0.3);
+}
+
+h3, th, td, label {
+	color: lightgray;
+}
+
+.btn{
+	background-color: mediumpurple;
+	color: lightgray;
+}
