@@ -1,6 +1,7 @@
 .navbar-brand {
 	font-family: 'Open Sans Condensed', sans-serif;
-	font-size: 50px;
+	font-size: 42px;
+	padding-top: 30px;
 }
 
 .navbar {
@@ -17,6 +18,11 @@ li {
 	font-family: 'Open Sans Condensed', cursive;
 	font-size: 80px !important;
 	color: lightgrey;
+}
+
+#logo {
+	width: 150px;
+	height: 75px;
 }
 
 h5 {

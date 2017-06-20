@@ -44,17 +44,17 @@ $(document).ready(function () {
 		//Moment is a function from jsdeliver that gets the current time
 		var currentTime = moment();
 		//Subtract a year from the moment object to get hour and minute
-		var dConverted = moment(childSnapshot.val().time, 'HH:mm').subtract(1, 'years');
+		var timeFormat = moment(childSnapshot.val().time, 'HH:mm').subtract(1, 'years');
 
-		var trainTime = moment(dConverted).format('HH:mm');
+		var trainTime = moment(timeFormat).format('HH:mm');
 
-		var tConverted = moment(trainTime, 'HH:mm').subtract(1, 'years');
+		var timeConverted = moment(trainTime, 'HH:mm').subtract(1, 'years');
 
-		var tDifference = moment().diff(moment(tConverted), 'minutes');
+		var timeDifference = moment().diff(moment(timeConverted), 'minutes');
 
-		var tRemainder = tDifference % frequency;
+		var timeRemainder = timeDifference % frequency;
 
-		var minsAway = frequency - tRemainder;
+		var minsAway = frequency - timeRemainder;
 
 		var nextTrain = moment().add(minsAway, 'minutes');
 		//Append data to the proper tables
